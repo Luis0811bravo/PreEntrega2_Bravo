@@ -161,20 +161,6 @@ img {
     
 }
 
-/* Footer */
-
-@media (min-width: 768px) {
-    .redes-sociales {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .info-footer {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        text-align: center;
-    }
-}
 
 /* Lo que hacemos */
 
@@ -201,13 +187,86 @@ img {
     }
 }
 
+/* Acreditaciones */
+
+@media (min-width: 768px) {
+    .acreditaciones {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Nuestros clientes */
+
+.tabla {
+    margin: 0 auto;
+}
+
+.tabla th, .tabla tr, .tabla td {
+    padding: 2rem 4rem;
+    border: 1px solid var(--negro);
+}
+
+
+/* Casos de exito */
 
 .casos-exito {
     border-bottom: 1px solid var(--gris);
 }
 
+.titulo__caso {
+    text-align: center;
+}
+
+.casos-exito__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casos-exito__img img {
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    .casos-exito__caso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 .casos-exito:last-of-type {
     border: none;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+.nav-footer ul {
+    padding: 0;
+}
+
+.nav-footer li {
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .redes-sociales {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
 }
 
 /*Nosotros*/
