@@ -1,0 +1,52 @@
+.formulario {
+    background-color: var(--gris);
+    width: min(80rem, 100%); /*va a utilizar el valor más pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    fieldset { 
+        border: none;
+        legend { 
+            color: $principal;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 2rem;
+
+        }
+        .contenedor-campos {
+            .campo { 
+                margin-bottom: 1rem;
+                label { 
+                    color: $negro;
+                    font-weight: 700;
+                    margin-bottom: .5rem;
+                    display: block;
+                }
+                .input-text { 
+                    width: 100%;
+                    border: none;
+                    padding: 1.5rem;
+                    border-radius: 1rem;
+
+                }
+                textarea { 
+                    height: 20rem;
+                }
+            }
+        }
+        div {
+            .btn--enviar { 
+                color: $negro;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        border-radius: 1rem;
+    }
+}

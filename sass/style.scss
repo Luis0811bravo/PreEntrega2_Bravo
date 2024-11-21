@@ -1,0 +1,62 @@
+@import "globales";
+@import "header";
+@import "footer";
+@import "index";
+@import "nosotros";
+@import "servicios";
+@import "contacto";
+
+.blog {
+    .entrada {
+            border-bottom: 1px solid $gris;
+            margin-bottom: 2rem;
+            &:last-of-type {
+                border: none;
+                margin-bottom: 0;
+            }
+        .entrada__contenido {
+            .boton--primario { 
+                background-color: $negro;
+            }
+        }
+    }
+}
+
+.sidebar {
+    .cursos {
+        .widget-curso {
+            border-bottom: 1px solid $gris;
+            margin-bottom: 2rem;
+            &:last-of-type {
+                border: none;
+                margin-bottom: 0;
+            }
+            .widget-curso__label { 
+                font-family: $funteHeading;
+                font-weight: 700;
+
+                .widget-curso__info {
+                    font-weight: 400;
+                }
+            }
+            .boton--curso { 
+                background-color: $principal;
+                padding: .8rem;
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .titulo-blog h2 {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,46 @@
+.servicios {
+    .servicio { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 1rem 0;
+        border-bottom: 1px solid $gris;
+        &:last-of-type {
+            border: none;
+        }
+        .servicio__informacion {
+            h4 {
+                background-color: $secundarioClaro ;
+                padding: 1rem;
+                color: var(--blanco);
+            }
+            .servicio__descripcion {
+                text-align: justify;
+                line-height: 2;
+            }
+            .boton--servicio {
+                background-color: $negro;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .servicios .servicio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .servicio__imagen {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        border-radius: 1rem;
+    }
+}

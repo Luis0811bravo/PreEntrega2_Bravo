@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GISIAP Laboratorio</title>
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
         <div class="hero">
-            <a href="index.html">
-                <img src="../img/logo.jpg" alt="Logotipo GISIAP">    
-            </a> 
-            <h1 class="titulo-principal">Grupo Integral de Servicios e Investigaciones Agroforestales y Pecuarias</h1>       
+            <div class="hero__img">
+                <a href="index.html">
+                    <img src="../img/logo.jpg" alt="Logotipo GISIAP">    
+                </a> 
+            </div>
+
+            <div>
+                <h1 class="hero__titulo">Grupo Integral de Servicios e Investigaciones Agroforestales y Pecuarias</h1> 
+            </div>
+            
         </div>
+
     </header>
+
 
     <div class="nav-bg">
         <nav class="navegacion-principal">
-            <a href="../index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="servicios.html">Nuestros Servicios</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="blog.html">Blog</a>
+            <a class="no-margin centrar-texto " href="../index.html">Inicio</a>
+            <a class="no-margin centrar-texto " href="nosotros.html">Nosotros</a>
+            <a class="no-margin centrar-texto " href="servicios.html">Nuestros Servicios</a>
+            <a class="no-margin centrar-texto " href="contacto.html">Contacto</a>
+            <a class="no-margin centrar-texto " href="blog.html">Blog</a>
         </nav>
     </div>
 
 
 
-    <section class="contenedor">
+    <section class="contenedor sombra">
         <h2>Contacto</h2>
 
         <form action="/submit" method="post" class="formulario">
@@ -58,7 +69,7 @@
                     </div>
                 </div> <!-- .contenedor-campos -->
 
-                <div class="alinear-derecha flex">
+                <div class="alinear-derecha">
                     <input class="boton btn--enviar" type="submit" value="Enviar">
                 </div>
 
@@ -68,18 +79,16 @@
     </section>
     <hr>
 
-    <footer class="contenedor">
+    <footer class="contenedor centrar-texto">
 
-        <div>
-            <nav>
-                <ul class="redes-sociales">
-                    <li> <a href="#">Facebook</a> </li>
-                    <li> <a href="#">Twitter</a> </li>
-                    <li> <a href="#">Instagram</a> </li>
-                    <li> <a href="#">WhatsApp</a> </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav-footer">
+            <ul class="redes-sociales no-padding">
+                <li> <a href="#">Facebook</a> </li>
+                <li> <a href="#">Twitter</a> </li>
+                <li> <a href="#">Instagram</a> </li>
+                <li> <a href="#">WhatsApp</a> </li>
+            </ul>
+        </nav>
         
         <div>
             <small class="info-footer">

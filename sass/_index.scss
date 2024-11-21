@@ -1,0 +1,105 @@
+.contenedor {
+    .trabajos {
+        .servicios__index {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 6rem 0;
+            .servicios__servicio {
+                margin: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .clientes {
+        .tabla { 
+            width: 100%;
+            margin: 0 auto;
+            display: table;
+
+            caption {
+                margin-bottom: 2rem;
+            }
+            thead {
+                tr {            
+                    th {
+                        font-weight: 700;
+                        text-align: center;
+                        border-bottom: 1rem solid transparent;
+                    }
+                }
+            }
+            tbody {
+                tr {       
+                    &:nth-child(2n) {
+                        background-color: $secundarioClaro;
+                    } 
+                    td {
+                        text-align: center;
+                        border: 1px solid $negro;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor .trabajos .servicios__index {
+        display: grid;
+        grid: 1fr / repeat(5, 1fr);
+        column-gap: 1rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 768px) {
+    .acreditaciones {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .clientes .tabla {
+        width: 70%;
+    }
+    .clientes .tabla th {
+        font-size: 2rem;
+    }
+    
+    .clientes .tabla td {
+        padding: 2rem 4rem;
+    }
+    
+}
+
+main {
+    .casos-exito {
+        &:last-of-type {
+            border: none;
+        }
+        border-bottom: 1px solid $gris;
+        padding-bottom: 1rem;
+        .casos-exito__caso {
+            .casos-exito__img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 768px) {
+    main .casos-exito .casos-exito__caso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

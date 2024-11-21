@@ -1,0 +1,41 @@
+.main-nosotros {
+    .grid { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .personal { 
+            background-image: linear-gradient(to top,$gris 0%, $blanco 100% );
+            width: 80vw;
+            height: 90vh;
+            padding: 1rem;
+            border-radius: 1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .personal__imagen { 
+                width: 60%;
+            }
+            .personal__imagen--big { 
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main-nosotros .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .main-nosotros .grid .personal {
+        width: 95%;
+        height: 100%;
+    }
+}
