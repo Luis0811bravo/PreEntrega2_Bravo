@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -94,6 +95,7 @@ img {
   text-align: center;
 }
 
+/* Animaciones */
 header .hero {
   display: flex;
   flex-direction: column;
@@ -166,6 +168,12 @@ footer .nav-footer .redes-sociales li {
 .contenedor .trabajos .servicios__index .servicios__servicio {
   margin: 1rem;
   font-size: 1.5rem;
+}
+.contenedor .acreditaciones-gral .acreditaciones a {
+  transition: 1s;
+}
+.contenedor .acreditaciones-gral .acreditaciones a:hover {
+  transform: scale(1.2);
 }
 .contenedor .clientes .tabla {
   width: 100%;
@@ -259,7 +267,7 @@ main .casos-exito .casos-exito__caso .casos-exito__img img {
   width: 60%;
 }
 .main-nosotros .grid .personal .personal__imagen--big {
-  width: 50%;
+  width: 45%;
 }
 
 @media (min-width: 768px) {
@@ -346,10 +354,15 @@ main .casos-exito .casos-exito__caso .casos-exito__img img {
   border-radius: 1rem;
 }
 .formulario fieldset .contenedor-campos .campo textarea {
-  height: 20rem;
+  height: 30rem;
 }
 .formulario fieldset div .btn--enviar {
   color: #000;
+  transition: 1s;
+}
+.formulario fieldset div .btn--enviar:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {

@@ -32,14 +32,22 @@
 
                 }
                 textarea { 
-                    height: 20rem;
+                    height: 30rem;
                 }
             }
         }
         div {
             .btn--enviar { 
                 color: $negro;
+                transition: 1s;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                } 
             }
+            
+            
         }
     }
 }

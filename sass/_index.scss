@@ -12,6 +12,17 @@
         }
     }
 
+    .acreditaciones-gral {
+        .acreditaciones {
+            a {
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
     .clientes {
         .tabla { 
             width: 100%;
