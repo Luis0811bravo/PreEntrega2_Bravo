@@ -14,7 +14,6 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
-  text-align: justify;
   background-image: linear-gradient(to top, #dfe9f3 0%, #fff 100%);
 }
 
@@ -55,7 +54,7 @@ li {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--funteHeading);
+  font-family: "PT Sans", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
@@ -241,7 +240,7 @@ main .casos-exito .casos-exito__caso .casos-exito__img img {
 @media (min-width: 768px) {
   main .casos-exito .casos-exito__caso {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 4fr;
   }
 }
 .main-nosotros .grid {
@@ -249,6 +248,7 @@ main .casos-exito .casos-exito__caso .casos-exito__img img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 .main-nosotros .grid .personal {
   background-image: linear-gradient(to top, rgba(187, 183, 183, 0.8) 0%, #fff 100%);
@@ -381,6 +381,9 @@ main .casos-exito .casos-exito__caso .casos-exito__img img {
 }
 .blog .entrada .entrada__contenido .boton--primario {
   background-color: #000;
+}
+.blog .entrada .entrada__imagen {
+  text-align: center;
 }
 
 .sidebar .cursos .widget-curso {

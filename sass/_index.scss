@@ -111,6 +111,6 @@ main {
 @media (min-width: 768px) {
     main .casos-exito .casos-exito__caso {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 3fr 4fr;
     }
 }
